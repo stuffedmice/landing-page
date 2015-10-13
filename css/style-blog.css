@@ -1,0 +1,281 @@
+
+/*************************************************************
+BASE STYLES
+*************************************************************/
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+
+body {
+	font-family: "Open Sans", sans-serif;
+	background-color: black;
+	
+}
+
+.logo {
+	float: left;
+	margin: 0px;
+	font-size: 48px;
+	color: white;
+	font-weight: 800;
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+/*************************************************************
+MAIN CONTENT STYLES
+*************************************************************/
+
+.container-blog {
+	background-color: #efefee;
+}
+
+
+.blog-content {
+	background-color: #efefee;
+	width: 960px;
+	margin: 0 120px 0;
+	overflow: hidden;
+}
+
+
+h2 {
+	font-size: 40px;
+	font-weight: 600;
+	color: #033048;
+}
+
+.masthead {
+		background: #033048;
+		padding: 20px 120px;
+		position: fixed;
+		width: 100%;
+		margin-top: 0px;
+	}
+
+a {
+	text-decoration: none;
+}
+
+a:hover,
+.navigation ul li a:hover {
+	color: #ababab;
+}	
+
+.navigation-wrap {
+	width: 960px;
+}
+
+	.navigation {
+		float: right;
+	}
+
+		.navigation ul {
+			font-size: 24px;
+			font-weight: 600px;
+			list-style: none;
+		    margin: 20px 0 0;
+		    padding: 0;
+		}
+
+			.navigation ul li {
+				display: inline;
+				margin-left: 50px;
+				color: #f9e42e;
+			}
+
+				.navigation ul li a {
+					color: #f9e42e;
+				}
+
+
+.main-column {
+	width: 700px;
+	float: left;
+	margin-top: 100px;
+	padding-top: 85px;
+}
+
+
+	article p::first-letter { /* Use :first-letter if support for IE 8 or earlier is needed */
+	  color: #606161;
+	  font-size: 70px;
+	  font-weight: 600;
+	  display: inline;
+	  text-align: middle;
+	  margin: 0px 10px 0px 0px;
+	  float: left;
+	}
+
+	article p {
+		color: #939191;
+		font-size: 24px;
+		font-weight: 300;
+		margin-bottom: 65px;
+	}
+
+		.read-more-link {
+			font-size: 24px;
+			font-weight: 600;
+			display: block;
+			text-align: right;
+			text-decoration: none;
+			color: #033048;
+			margin-bottom: 40px;
+		}
+
+
+	.divider {
+		border-bottom: 1px solid #033048;
+	}
+
+
+/*************************************************************
+SIDEBAR STYLES
+*************************************************************/	
+
+.side-bar {
+	width: 240px;
+	float: right;
+	padding-top: 190px ;
+}
+
+	.side-header {
+		font-size: 32px;
+		font-weight: 700;
+	}
+
+	.blog-categories {
+		list-style: none;
+		font-size: 24px;
+		font-weight: 300;
+		color: #033048;
+		padding: 0;
+	}
+
+	.about { 
+	font-size: 22px;
+	font-weight: 300;
+	margin: 0px;
+	color: #033048;
+	}
+
+
+		.learn-more-link {
+			font-size: 22px;
+			font-weight: 600;
+			text-decoration: none;
+			color: #033048;
+		}
+
+	.about-snippet {
+		margin-bottom: 60px;
+	}
+
+
+
+
+/*************************************************************
+CTA SECTION STYLES
+*************************************************************/
+
+.cta-bottom-bg {
+	background-color: #f9e42e;
+	margin: 0;
+	padding: 30px 0;
+	text-align: center;
+	clear: both;
+	margin-top: 120px;
+}
+
+
+	.cta-bottom {
+		background-color: #033048;
+		text-align: center;
+		display: inline-block;
+		width: 300px;
+		height: 60px;
+		border-radius: 5px;
+		font-size: 24px;
+		font-weight: 600;
+		color: #ffffff;
+		text-decoration: none;
+		margin: 0;
+		line-height: 60px;
+	}
+
+
+
+	.cta-bottom:hover {
+		background-image: url("../images/testimonial_bg.jpg");
+	}
+
+
+/*************************************************************
+FOOTER STYLES
+*************************************************************/
+
+footer {
+	background-color: #121211;
+	margin: 0;
+	clear: both;
+}
+
+	h4 {
+
+		font-size: 48px;
+		font-weight: 800;
+	    color: #f9e42e;
+	    text-align: center;
+	    margin: 0px;
+	    padding: 70px 0 65px 0;
+	}
+
+	.social-media {
+		text-align: center;
+		padding: 0 0 60px 0;
+	}
+
+	ol {
+		display: inline;
+		margin: 0;
+		padding: 0;
+	}
+
+		.tw-icon {
+			display: inline;
+			padding: 0 24px 0 0; 
+			margin: 0;
+		}
+
+		.fb-icon {
+			display: inline;
+			padding: 0 0 0 24px;
+			margin: 0;
+		}
+
+	.copyright {
+		text-align: center;
+		color: #ffffff;
+		font-size: 19px;
+		font-weight: 300;
+		letter-spacing: 0.05em;
+		padding-bottom: 40px;
+		margin-bottom: 0px;
+	}
+
+
